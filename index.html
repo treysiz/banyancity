@@ -30,6 +30,26 @@
       color: #333;
       line-height: 1.6;
     }
+    input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #219150;
+    }
   </style>
 </head>
 <body>
@@ -37,8 +57,15 @@
     <h2>Welcome to Banyan City Buffet!</h2>
     <p>Thank you for joining our SMS program. Show this discount card at the counter to get <b>10% off</b> your next order.</p>
     
-    <!-- 打折卡图片 (替换为你的真实图片链接) -->
-    <img src="http://107.173.41.199/uploads/banyancity.jpg?text=10%25+OFF+Voucher" alt="Discount Card">
+    <!-- 打折卡图片 (替换为你自己上传到 GitHub 或服务器的真实图片链接) -->
+    <img src="http://107.173.41.199/uploads/banyancity.jpg" alt="Discount Card">
+
+    <!-- 模拟手机号输入框 (Twilio 审核需要 Web Form Opt-in) -->
+    <form>
+      <input type="text" placeholder="Enter your phone number">
+      <br>
+      <button type="submit">Join Now</button>
+    </form>
 
     <p>By submitting your phone number, you agree to receive promotional messages and discount offers from Banyan City Buffet.  
     To stop receiving messages, reply <b>STOP</b> anytime.</p>
